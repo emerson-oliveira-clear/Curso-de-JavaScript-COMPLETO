@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modelo</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <div class="divpai">
+      <div class="div1">
+        <h1>RESULTADO</h1>
+          <p class="pad">Abaixo de 18,49</p>
+          <p class="pad">Entre 18,5 e 24,99</p>
+          <p class="pad">Entre 25 e 29,99</p>
+          <p class="pad">Entre 30 e 34,99</p>
+          <p class="pad">Entre 35 e 39,99</p>
+          <p class="pad">Acima de 40</p>
+        
+      </div>
+
+      <div class="div2">
+        <h1>SITUAÇÃO</h1> 
+          <p class="pad">Abaixo do peso</p>
+          <p class="pad">Peso normal</p>
+          <p class="pad">Acima do peso</p>
+          <p class="pad">Obesidade I</p>
+          <p class="pad">Obesidade II (severa)</p>
+          <p class="pad">Obesidade III (mórbida)</p>
+        
+      </div>
+    </div>
+
+
+    <form action="/" id="formulario" method="POST">
+      <label for="peso">Peso</label>
+      <input type="text" id="peso" name="peso">
+      <label for="altura">Altura</label>
+      <input type="text" id="altura" name="altura">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+  </section>
+
+  <script src="../main.js"></script>
+
+
+</body>
+
+</html>
