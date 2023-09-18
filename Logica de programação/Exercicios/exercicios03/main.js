@@ -6,15 +6,19 @@ const elementos = [
     { tag: 'section', texto: 'Frase 4' },
 ];
 
-for (i = 0; i < elementos.length; i++) {
-    const { tag } = elementos[i];
-    const { texto } = elementos[i];
+const section = document.querySelector('.container')
 
-    document.createElement(tag)
+for (i = 0; i < elementos.length; i++) {
+    const { tag, texto  } = elementos[i];
     
+
+    const tagCriada = section.createElement(tag)
+   
+    tagCriada.createElement(texto);
 
 }
 console.log('chega aqui', tag, texto)
+
 
 
 
