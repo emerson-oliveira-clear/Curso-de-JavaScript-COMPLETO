@@ -17,7 +17,7 @@ function funcao2(a,b,c,d=8,e=9,f=10) {
 funcao2(6,6,6) 
 
 console.log('-------------------------')
-//vaidar undefined
+//vai dar undefined
 function funcao3(a,b) {
     
     console.log(a + b)
