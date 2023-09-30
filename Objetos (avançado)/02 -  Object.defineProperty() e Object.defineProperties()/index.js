@@ -1,4 +1,4 @@
-function Produto(nome, preco,estoque){
+function Produto(nome, preco,   estoque){
     this.nome = nome,
     this.valor = preco,
     //this.estoque = estoque
