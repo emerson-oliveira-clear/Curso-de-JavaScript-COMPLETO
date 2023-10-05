@@ -28,5 +28,5 @@ const p1 = criaPessoa('luiz', 'otavio')
 
 p1.falar()
 p1.comer()
-p1.beber()
+p1.beber() 
 
