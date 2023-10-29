@@ -1,3 +1,4 @@
+/*
 const request = obj => {
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
@@ -13,7 +14,9 @@ const request = obj => {
       });
     });
   };
-  
+  */
+
+
   document.addEventListener('click', e => {
     const el = e.target;
     const tag = el.tagName.toLowerCase();
@@ -25,19 +28,20 @@ const request = obj => {
   });
   
   async function carregaPagina(el) {
-    const href = el.getAttribute('href');
+    try{
+
+      const href = el.getAttribute('href');
+      const response = await fetch(href)
   
-    const objConfig = {
-      method: 'GET',
-      url: href
-    };
+      if (resp.status !== 200 ) throw new Error('ERRO MALUCO')
   
-    try {
-      const response = await request(objConfig);
-      carregaResultado(response);
+      const html = await response.text()
+      carregaResultado(html)  
+
     } catch(e) {
-      console.log(e);
+      console.log(e)
     }
+ 
   }
   
   function carregaResultado(response) {
